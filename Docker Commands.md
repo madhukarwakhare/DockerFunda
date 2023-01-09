@@ -1,4 +1,5 @@
 # DockerFunda
+# Docker Container Management Commands
 See the containers currently running on the system:
 
 docker ps
@@ -61,6 +62,9 @@ docker diff [container]
 Copy a local file to a directory in a container:
 
 docker cp [file-path] CONTAINER:[path]
+
+# Running a Container
+
 Run a command in a container based on an image:
 
 docker run [image] [command]
@@ -120,6 +124,9 @@ docker attach [container]
 Run a shell inside a running container:
 
 docker exec -it [container] [shell]
+
+# Docker Image Commands
+
 Create an image from a Dockerfile:
 
 docker build [dockerfile-path]
@@ -200,7 +207,8 @@ Disconnect a container from a network:
 
 docker network disconnect [network] [container]
 
-Docker General Management Commands
+# Docker General Management Commands
+
 Log in to a Docker registry:
 
 docker login
@@ -225,7 +233,8 @@ Remove unused images, containers, and networks:
 
 docker system prune
 
-Plugin Management Commands
+# Plugin Management Commands
+
 Enable a Docker plugin:
 
 docker plugin enable [plugin]
@@ -245,3 +254,6 @@ docker plugin inspect [plugin]
 Remove a plugin:
 
 docker plugin rm [plugin]
+
+
+# Thank You
